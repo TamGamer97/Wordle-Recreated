@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle</title>
+</head>
+<body style="background-color: rgb(22, 22, 22);">
+
+    <h1 style="text-align: center; margin-top: 50px; font-size: 40px; color: white;">Wordle Infinite</h1>
+
+    <!-- <div style="position: absolute; right: 0px; top: 150px; background-color: transparent; width: 300px; height: 250px;">
+        <h1 style="margin-top: 50px; font-size: 30px; text-align: center;">10 <br> Correct Answers</h1>
+    </div> -->
+
+    <div id="answerSection" style="display: flex; justify-content: center; flex-direction: column;">
+
+        <div id="row1" style="display: flex; justify-content: center; flex-direction: row; margin-top: 10px;">
+
+            <div id="singleBox" style="width: 50px; height: 50px; margin-left: 5px; margin-right: 5px;" >
+                <input type="text" style="width: 50px; height: 50px; font-size: 50px; text-align: center; border: solid black; outline: none; background-color: transparent; color: white;" maxlength="1">
+            </div>
+            
+            <div id="singleBox" style="width: 50px; height: 50px; margin-left: 5px; margin-right: 5px;" >
+                <input disabled type="text" style="width: 50px; height: 50px; font-size: 50px; text-align: center; border: solid black; outline: none; background-color: transparent; color: white;" maxlength="1">
+            </div>
+    
+            <div id="singleBox" style="width: 50px; height: 50px; margin-left: 5px; margin-right: 5px;" >
+                <input disabled type="text" style="width: 50px; height: 50px; font-size: 50px; text-align: center; border: solid black; outline: none; background-color: transparent; color: white;" maxlength="1">
+            </div>
+            
+            <div id="singleBox" style="width: 50px; height: 50px; margin-left: 5px; margin-right: 5px;" >
+                <input disabled type="text" style="width: 50px; height: 50px; font-size: 50px; text-align: center; border: solid black; outline: none; background-color: transparent; color: white;" maxlength="1">
+            </div>
+    
+            <div id="singleBox" style="width: 50px; height: 50px; margin-left: 5px; margin-right: 5px;" >
+                <input disabled type="text" style="width: 50px; height: 50px; font-size: 50px; text-align: center; border: solid black; outline: none; background-color: transparent; color: white;" maxlength="1">
+            </div>
+
+        </div>
+
+        <div id="row2" style="display: flex; justify-content: center; flex-direction: row; margin-top: 10px">
+
+            <div id="singleBox" style="width: 50px; height: 50px; margin-left: 5px; margin-right: 5px;" >
+                <input disabled type="text" style="width: 50px; height: 50px; font-size: 50px; text-align: center; border: solid black; outline: none; background-color: transparent; color: white;" maxlength="1">
+            </div>
+            
+            <div id="singleBox" style="width: 50px; height: 50px; margin-left: 5px; margin-right: 5px;" >
+                <input disabled type="text" style="width: 50px; height: 50px; font-size: 50px; text-align: center; border: solid black; outline: none; background-color: transparent; color: white;" maxlength="1">
+            </div>
+    
+            <div id="singleBox" style="width: 50px; height: 50px; margin-left: 5px; margin-right: 5px;" >
+                <input disabled type="text" style="width: 50px; height: 50px; font-size: 50px; text-align: center; border: solid black; outline: none; background-color: transparent; color: white;" maxlength="1">
+            </div>
+            
+            <div id="singleBox" style="width: 50px; height: 50px; margin-left: 5px; margin-right: 5px;" >
+                <input disabled type="text" style="width: 50px; height: 50px; font-size: 50px; text-align: center; border: solid black; outline: none; background-color: transparent; color: white;" maxlength="1">
+            </div>
+    
+            <div id="singleBox" style="width: 50px; height: 50px; margin-left: 5px; margin-right: 5px;" >
+                <input disabled type="text" style="width: 50px; height: 50px; font-size: 50px; text-align: center; border: solid black; outline: none; background-color: transparent; color: white;" maxlength="1">
+            </div>
+
+        </div>
+    
+        <div id="row3" style="display: flex; justify-content: center; flex-direction: row; margin-top: 10px">
+
+            <div id="singleBox" style="width: 50px; height: 50px; margin-left: 5px; margin-right: 5px;" >
+                <input disabled type="text" style="width: 50px; height: 50px; font-size: 50px; text-align: center; border: solid black; outline: none; background-color: transparent; color: white;" maxlength="1">
+            </div>
+            
+            <div id="singleBox" style="width: 50px; height: 50px; margin-left: 5px; margin-right: 5px;" >
+                <input disabled type="text" style="width: 50px; height: 50px; font-size: 50px; text-align: center; border: solid black; outline: none; background-color: transparent; color: white;" maxlength="1">
+            </div>
+    
+            <div id="singleBox" style="width: 50px; height: 50px; margin-left: 5px; margin-right: 5px;" >
+                <input disabled type="text" style="width: 50px; height: 50px; font-size: 50px; text-align: center; border: solid black; outline: none; background-color: transparent; color: white;" maxlength="1">
+            </div>
+            
+            <div id="singleBox" style="width: 50px; height: 50px; margin-left: 5px; margin-right: 5px;" >
+                <input disabled type="text" style="width: 50px; height: 50px; font-size: 50px; text-align: center; border: solid black; outline: none; background-color: transparent; color: white;" maxlength="1">
+            </div>
+    
+            <div id="singleBox" style="width: 50px; height: 50px; margin-left: 5px; margin-right: 5px;" >
+                <input disabled type="text" style="width: 50px; height: 50px; font-size: 50px; text-align: center; border: solid black; outline: none; background-color: transparent; color: white;" maxlength="1">
+            </div>
+
+        </div>
+
+        <div id="row4" style="display: flex; justify-content: center; flex-direction: row; margin-top: 10px">
+
+            <div id="singleBox" style="width: 50px; height: 50px; margin-left: 5px; margin-right: 5px;" >
+                <input disabled type="text" style="width: 50px; height: 50px; font-size: 50px; text-align: center; border: solid black; outline: none; background-color: transparent; color: white;" maxlength="1">
+            </div>
+            
+            <div id="singleBox" style="width: 50px; height: 50px; margin-left: 5px; margin-right: 5px;" >
+                <input disabled type="text" style="width: 50px; height: 50px; font-size: 50px; text-align: center; border: solid black; outline: none; background-color: transparent; color: white;" maxlength="1">
+            </div>
+    
+            <div id="singleBox" style="width: 50px; height: 50px; margin-left: 5px; margin-right: 5px;" >
+                <input disabled type="text" style="width: 50px; height: 50px; font-size: 50px; text-align: center; border: solid black; outline: none; background-color: transparent; color: white;" maxlength="1">
+            </div>
+            
+            <div id="singleBox" style="width: 50px; height: 50px; margin-left: 5px; margin-right: 5px;" >
+                <input disabled type="text" style="width: 50px; height: 50px; font-size: 50px; text-align: center; border: solid black; outline: none; background-color: transparent; color: white;" maxlength="1">
+            </div>
+    
+            <div id="singleBox" style="width: 50px; height: 50px; margin-left: 5px; margin-right: 5px;" >
+                <input disabled type="text" style="width: 50px; height: 50px; font-size: 50px; text-align: center; border: solid black; outline: none; background-color: transparent; color: white;" maxlength="1">
+            </div>
+
+        </div>
+
+        <div id="row5" style="display: flex; justify-content: center; flex-direction: row; margin-top: 10px">
+
+            <div id="singleBox" style="width: 50px; height: 50px; margin-left: 5px; margin-right: 5px;" >
+                <input disabled type="text" style="width: 50px; height: 50px; font-size: 50px; text-align: center; border: solid black; outline: none; background-color: transparent; color: white;" maxlength="1">
+            </div>
+            
+            <div id="singleBox" style="width: 50px; height: 50px; margin-left: 5px; margin-right: 5px;" >
+                <input disabled type="text" style="width: 50px; height: 50px; font-size: 50px; text-align: center; border: solid black; outline: none; background-color: transparent; color: white;" maxlength="1">
+            </div>
+    
+            <div id="singleBox" style="width: 50px; height: 50px; margin-left: 5px; margin-right: 5px;" >
+                <input disabled type="text" style="width: 50px; height: 50px; font-size: 50px; text-align: center; border: solid black; outline: none; background-color: transparent; color: white;" maxlength="1">
+            </div>
+            
+            <div id="singleBox" style="width: 50px; height: 50px; margin-left: 5px; margin-right: 5px;" >
+                <input disabled type="text" style="width: 50px; height: 50px; font-size: 50px; text-align: center; border: solid black; outline: none; background-color: transparent; color: white;" maxlength="1">
+            </div>
+    
+            <div id="singleBox" style="width: 50px; height: 50px; margin-left: 5px; margin-right: 5px;" >
+                <input disabled type="text" style="width: 50px; height: 50px; font-size: 50px; text-align: center; border: solid black; outline: none; background-color: transparent; color: white;" maxlength="1">
+            </div>
+
+        </div>
+    </div>
+
+    <div style="justify-content: center; display: flex; margin-top: 50px;">
+        <h1 id="infoTxt" style="font-size: 20px; color: red; text-align: center; position: absolute; bottom: 100px;"></h1>
+        <div onclick="location.href = '/' " id="contBtn" style="display: none; width: 150px; height: 50px; background-color: #008c42; border-radius: 10px;">
+            <h1 style="font-size: 20px; color: white; text-align: center;">Continue ></h1>
+        </div>
+    </div>
+
+</body>
+<script>
+
+    let rowCount = 1
+    let columnCount = 1
+    let answer = ""
+
+    function startWordle()
+    {
+        const words = ["lying","block","exist","touch","learn","story","rough","funny","heavy","seven","cloth","zebra","crack","lungs","lunch","pride","basis","broad","zebra","women","bread","today","depth","weigh","lying","price","lying","train","stems","light","worry","again","stove","aware","taken","score","stone","ahead","broke","route","model","built","party","pitch","below","above","about","noise","dried","quick","hurry","point","store","doing","cover","using","loose","ocean","touch","happy","start","power","spite","basic","enter","fight","chest","vowel","older","dried","noise","tried","metal","paint","allow","again","bread","skill","front","thank","river","stage","board","happy","quite","brick","tight","maybe","worry","leave","light","third","older","enter","cabin","touch","visit","those","piano","fence","giant","stone","flies","extra","shade","enemy","drive","vowel","break","chart","short","early","final","refer","quite","spend","exact","movie","steam","enjoy","found","arrow","happy","large","aware","write","pupil","grade","press","built","steam","ocean","chair","guide","again","plate","noise","offer","basis","ready","truck","solve","spite","sides","money","young","rocky","brush","sense","sheet","until","water","fewer","wheat","mouse","grass","those","grain","hello","water","movie","store","crack","small","court","sense","might","arrow","plain","apart","grown","slope","climb","heard","truth","loose","watch","folks","final","steep","tight","stage","globe","happy","strip","build","wrote","fruit","human","allow","youth","raise","human","motor","seems","first","plant","break","great","swung","frame","child","still","meant","birds","orbit","seven","spell","loose","found","needs","alive","slept","bring","broke","dress","fight","great","older","shape","right","angle","hello","solid","reach","occur","bring","scene","topic","ruler","upper","steel","peace","court","smell","there","rhyme","would","break","porch","count","smell","whale","thank","sport","dozen","young","stove","dried","court","proud","worry","loose","young","eager","folks","goose","early","women","pilot","tried","given","grain","hello","horse","dried","train","avoid","climb","zebra","eaten","shine","stems","blood","story","chain","dirty","there","clock","total","model","known","offer","aside","grain","funny","since","tower","eager","total","voice","twice","goose","depth","every","still","learn","store","frame","proud","plate","short","lunch","known","level","guide","brave","metal","table","learn","first","crowd","maybe","stove","music","crowd","below","depth","break","steam","doing","thick","human","twice","giant","canal","spell","throw","hello","drawn","honor","birth","heavy","means","knife","tried","forty","check","chest","field","chart","outer","which","front","month","labor","spite","globe","clear","movie","other","tired","pitch","worry","bound","using","older","pound","angle","store","speed","today","eight","ought","worth","chain","event","front","guide","shown","first","paper","shore","throw","avoid","fruit","globe","prove","being","range","brick","whose","adult","canal","stuck","final","sweet","black","every","acres","women","order","lucky","shore","tower","orbit","scale","north","field","waste","lower","every","adult","youth","rough","fully","exist","smoke","lying","magic","strip","nails","guide","strip","lungs","rocky","fence","fully","voice","exact","exact","pride","stood","place","stage","final","paint","catch","cause","metal","where","lungs","board","fresh","score","burst","stick","tears","worth","sharp","scale","split","tried","chest","lucky","place","raise","world","lucky","final","great","split","skill","coach","trail","stand","swing","guess","judge","taken","heard","shade","offer","topic","bring","sugar","black","acres","laugh","metal","rhyme","stick","brush","whole","curve","threw","shoot","porch","light","cover","spell","empty","paint","money","cabin","those","broke","could","throw","tales","ocean","range","tired","stems","loose","heart","right","exact","broke","whale","forth","month","whole","below","brass","straw","tribe","stick","labor","apart","fully","pilot","cream","quiet","coast","truck","whole","chose","porch","state","fruit","river","truck","slept","labor","could","acres","final","meant","fresh","stand","leave","where","broad","class","black","white","pitch","slide","month","stage","outer","spent","brown","dozen","labor","avoid","shape","funny","stand","guide","floor","grade","canal","exist","arrow","death","about","tried","goose","death","sides","topic","peace","hello","upper","waste","noted","quiet","wrong","share","eight","sides","eaten","known","clear","trace","shelf","floor","stock","equal","grade","pupil","usual","equal","brush","spite","honor","shore","cream","enter","thumb","month","lower","touch","noted","fight","movie","teach","chart","proud","needs","smoke","learn","globe","start","month","motor","chief","outer","month","taken","price","snake","right","stage","power","major","still","ought","happy","porch","happy","thumb","share","leave","grade","alive","porch","enjoy","image","ready","route","chose","began","local","track","waste","learn","forth"]
+
+        answer = words[Math.floor(Math.random() * words.length + 1)]
+
+        answer = answer.toUpperCase()
+
+        moveInputs()
+        document.getElementById('row1').childNodes[1].childNodes[1].select()
+    }
+
+    startWordle()
+
+    function moveInputs()
+    {
+        const cNodes = document.getElementById('row' + rowCount).childNodes
+
+        let currentNode = ""
+
+        cNodes.forEach((n, nInd) => {
+
+            n.addEventListener('input', (e) => {
+                // console.log('pressed')
+                // console.log(cNodes[nInd + 2].childNodes[1])
+                // console.log(e.data)
+                if(!e.data)
+                {
+                    cNodes[nInd - 2].childNodes[1].select()
+                    return
+                }
+                if (/[^a-zA-Z]/.test(n.childNodes[1].value)) // if letter is not a charecter
+                {
+                    n.childNodes[1].value = "" // resset input
+                    return
+                }
+                try{
+                    cNodes[nInd + 2].childNodes[1].disabled = false
+                    cNodes[nInd + 2].childNodes[1].select()
+                    currentNode = nInd + 2
+
+                    columnCount += 1
+
+                    n.childNodes[1].value = n.childNodes[1].value.toUpperCase()
+                }catch{ // if on last charectoer
+                    n.childNodes[1].value = n.childNodes[1].value.toUpperCase()
+                    console.log("Word Completed")
+                    checkWord()
+                }
+
+                console.log(rowCount + " " + columnCount)
+            })
+        })
+
+        addEventListener('keyup', (e) => {
+            if(e.key == "Backspace")
+            {
+                try{
+                    // if(columnCount != 1)
+
+                    cNodes[currentNode - 2].childNodes[1].select()
+                    currentNode = currentNode - 2
+
+                    columnCount -= 1
+                    
+                }catch{ // if on fist element
+                    // cNodes[currentNode].childNodes[1].value = ""
+                    document.getElementById('row' + rowCount).childNodes[1].childNodes[1].select()
+                }
+            }
+            if(e.key == "Enter")
+            {
+                if(document.getElementById('contBtn').style.display != "none")
+                {
+                    document.getElementById('contBtn').childNodes[1].click()
+                }
+            }
+        })
+    }
+
+    function checkWord()
+    {
+        const cNodes = document.getElementById('row' + rowCount).childNodes
+        let word = ""
+
+        
+        const letterInv = (letter) => { // letter involved
+            for (var x = 0; x < 5; x++)
+            {
+                if(answer[x] == letter)
+                {
+                    return true
+                }
+            }
+
+            return false
+        }
+
+
+        let ansCount = 0;
+        cNodes.forEach(n => {
+            try{
+                var letter = n.childNodes[1].value
+                word += letter
+                
+                console.log(answer.charAt(ansCount) + " " + letter)
+
+                if(letter == answer.charAt(ansCount))
+                {
+                    console.log('correct')
+                    n.childNodes[1].style.color = "green"
+                }else{
+                    console.log('incorrect')
+
+                    if(letterInv(letter)) // if letter is involved in the asnwer
+                    {
+                        n.childNodes[1].style.color = "yellow"
+                    }
+
+                }
+                
+                ansCount += 1
+            }catch{
+                
+            }
+
+        })
+
+        console.log(word) // your word not asnwer
+
+        if(word == answer)
+        {
+            document.getElementById('contBtn').style.display = 'block'
+
+            disableRow(1)
+            disableRow(2)
+            disableRow(3)
+            disableRow(4)
+            disableRow(5)
+
+            return
+        }
+
+        if(rowCount < 5)
+        {
+            rowCount += 1
+            columnCount = 1
+            document.getElementById('row' + rowCount).childNodes[1].childNodes[1].disabled = false
+            document.getElementById('row' + rowCount).childNodes[1].childNodes[1].select()
+            disableRow(rowCount - 1)
+            moveInputs()
+        }else{
+            disableRow(5)
+            document.getElementById('contBtn').style.display = 'block'
+
+            document.getElementById('infoTxt').innerHTML = "Correct Word: " + answer
+        }
+    }
+
+    function disableRow(rowNum)
+    {
+        const cNodes = document.getElementById('row' + rowNum).childNodes
+
+        cNodes.forEach(n => {
+            try{
+                n.childNodes[1].disabled = true
+            }catch{
+                
+            }
+        })
+    }
+
+</script>
+</html>
+
+<style>
+    * {
+        font-family: 'Roboto';
+    }
+</style>
